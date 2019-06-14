@@ -1,26 +1,26 @@
 self.__precacheManifest = [
   {
-    "revision": "01ca9a51284e29ea0e33",
-    "url": "/goit-react-hw-04-reader/static/js/runtime~main.fe870612.js"
+    "revision": "a40c2fcb2e60adb0f2f2",
+    "url": "/goit-react-hw-04-reader/static/js/runtime~main.eee9a6aa.js"
   },
   {
     "revision": "8847a36faad5711cbbae",
     "url": "/goit-react-hw-04-reader/static/js/main.066206ae.chunk.js"
   },
   {
-    "revision": "4495592ee354708296b5",
-    "url": "/goit-react-hw-04-reader/static/js/3.d28efa9f.chunk.js"
+    "revision": "c662d40bd88bd4f85030",
+    "url": "/goit-react-hw-04-reader/static/js/3.d9ce9eb2.chunk.js"
   },
   {
     "revision": "56ef636fe6798ee8a79b",
     "url": "/goit-react-hw-04-reader/static/js/2.2b8b16a9.chunk.js"
   },
   {
-    "revision": "4495592ee354708296b5",
+    "revision": "c662d40bd88bd4f85030",
     "url": "/goit-react-hw-04-reader/static/css/3.9c2676f3.chunk.css"
   },
   {
-    "revision": "dc5763cbd33794f97c25baed9aa92e03",
+    "revision": "95f38ae8ce9ce818d5fb585defac539a",
     "url": "/goit-react-hw-04-reader/index.html"
   }
 ];
