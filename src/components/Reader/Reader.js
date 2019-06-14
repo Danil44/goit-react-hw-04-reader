@@ -39,7 +39,7 @@ class Reader extends Component {
     if (prevProps.location.search !== location.search) {
       const nextPage = getPageFromSearch(this.props);
 
-      if (nextPage > items.length || nextPage < items.length) {
+      if (nextPage > items.length || nextPage < 0) {
         history.replace({
           pathname: location.pathname,
           search: `item=1`,
