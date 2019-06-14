@@ -17,8 +17,9 @@ class Reader extends Component {
     items: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
     location: PropTypes.shape({
       pathname: PropTypes.string.isRequired,
+      search: PropTypes.string.isRequired,
     }).isRequired,
-    history: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+    history: PropTypes.shape({}).isRequired,
   };
 
   componentDidMount() {
@@ -33,8 +34,23 @@ class Reader extends Component {
     }
   }
 
+  componentDidUpdate(prevProps) {
+    const { location, history, items } = this.props;
+    if (prevProps.location.search !== location.search) {
+      const nextPage = getPageFromSearch(this.props);
+
+      if (nextPage > items.length || nextPage < items.length) {
+        history.replace({
+          pathname: location.pathname,
+          search: `item=1`,
+        });
+      }
+    }
+  }
+
   updateLocation = num => {
     const { history, location } = this.props;
+
     history.push({
       ...location,
       search: `item=${num}`,
